@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR for Business Model</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">HR for Business® Model</div>
+
+    <!-- Table for HR Model -->
+    <div class="table-container">
+        <table>
+            <tr>
+                <td rowspan="2" class="left-column">HR Strategic Impact</td>
+                <td class="header-cell strategic_impact">Organizational</td>
+                <td class="header-cell click-me" onclick="openModal('Culture to Market')">Culture to Market</td>
+                <td class="header-cell click-me" onclick="openModal('Business Guidance')">Business Guidance</td>
+                <td class="header-cell click-me" onclick="openModal('Business Governance')">Business Governance</td>
+                <td class="header-cell click-me" onclick="openModal('Organizational Design')">Organizational Design</td>
+            </tr>
+            <tr>
+                <td class="section-cell strategic_impact">Strategic Drivers</td>
+                <td class="section-cell">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Competitive - Market Intelligence')">
+                                Be competitive
+                                <br>
+                                <br>
+                                Market Intelligence
+                            </td>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Accurate - People Analytics')">
+                                Be accurate
+                                <br>
+                                <br>
+                                People Analytics
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="section-cell">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Ourselves - Engagement Culture')">
+                                Be ourselves
+                                <br><br>
+                                Engagement Culture
+                            </td>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Successful - Leadership Development')">
+                                Be successful
+                                <br><br>
+                                Leadership Development
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="section-cell">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Smart - Knowledge Management')">
+                                Be smart
+                                <br><br>
+                                Knowledge Management
+                            </td>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Agile - Sales Power')">
+                                Be agile
+                                <br><br>
+                                Sales Power
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="section-cell">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell click-me" onclick="openModal('Be Recognized - Compensations & Benefits')" colspan="2">
+                                Be recognized
+                                <br>
+                                <br>
+                                Compensations & Benefits
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="left-column">HR Operational Excellence</td>
+                <td class="section-cell operational_excellence click-me" onclick="openModal('Function')">Function</td>
+                <td class="section-cell-top">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell-internal click-me" onclick="openModal('Compliance (Exit & Int)')">Compliance (Exit & Int)</td>
+                            <td class="sub-section-cell-internal click-me" onclick="openModal('Cost Control')">Cost Control</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="section-cell-top">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell-internal click-me" onclick="openModal('Contribution to Perform')">Contribution to Perform</td>
+                            <td class="sub-section-cell-internal click-me" onclick="openModal('Customer Satisfaction')">Customer Satisfaction</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="section-cell-top">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="sub-section-cell-internal click-me" onclick="openModal('Cultural Alignment')">Cultural Alignment</td>
+                            <td class="sub-section-cell-internal click-me" onclick="openModal('Content Certified')">Content Certified</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="section-cell-top click-me" onclick="openModal('Currently Adopted')">Currently Adopted</td>
+            </tr>
+            <tr>
+                <td class="section-cell operational_excellence click-me" onclick="openModal('People')">People</td>
+                <td class="section-cell click-me" onclick="openModal('Employee Experience')">Employee Experience</td>
+                <td class="section-cell click-me" onclick="openModal('Employee Contribution')">Employee Contribution</td>
+                <td class="section-cell click-me" onclick="openModal('Employee Contribution')">Employee Development</td>
+                <td class="section-cell click-me" onclick="openModal('Employee Engagement')">Employee Engagement</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <h2 id="modalTitle"></h2>
+        <div class="modal-text-container">
+            <p id="modalText"></p>
+        </div>
+        <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+
+<!-- Script para manejar el modal -->
+<script type="module" src="./js/data/modalTexts.js"></script>
+<script type="module" src="./js/modal.js"></script>
+<script type="module">
+    import { openModal, closeModal } from './js/modal.js';
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+</script>
+
+
+<!-- Logo -->
+<div class="logo">
+    PGA Group—HR for Business
+</div>
+
+</body>
+</html>
